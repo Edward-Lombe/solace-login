@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Solace - Login</title>
+
+    <!-- Bootstrap -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <style media='screen'>
+
+      .login-panel {
+        background-color: rgba(189, 195, 199, 1);
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        height: 100vh; }
+
+        .login-panel > form {
+          width: 100%; }
+
+        .login-panel hr {
+          border-top: 1px solid #2c3e50; }
+
+        .login-panel .img-wrap {
+          background-color: white;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 1.5rem;
+          box-sizing: border-box;
+          text-align: center;
+          box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        }
+
+        .login-panel footer {
+          box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+          box-sizing: border-box;
+          background-color: #4b6ba6;
+          color: white;
+          padding: 1.5rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%; }
+
+      .yellow {
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 33.33%;
+        left: 0;
+        width: 100%;
+        height: 33.33vh;
+        background: #f3bc55;
+      }
+
+      .grey {
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 66.66%;
+        left: 0;
+        width: 100%;
+        height: 33.33vh;
+        background: #eeeeee;
+      }
+
+      .blue {
+        background: url('http://solacetechnology.com.au/images/headers/backgroundimage.jpg') center left no-repeat;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 33.33vh;
+        background-color: #4b6ba6;
+      }
+
+      .award { text-align: center; }
+
+      .icon-row {
+        color: white;
+        height: 100%;
+        text-align: center; }
+
+        .icon-row > div.row {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js'></script>
+      <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class='yellow'>
+      <div class='container-fluid icon-row hidden-xs'>
+        <div class='row'>
+          <div class='col-md-3 col-lg-4'>
+            <div class='row'>
+              <div class='col-xs-6'>
+                <img src='http://www.solacetechnology.com.au/images/icons/accounting.gif' alt='' />
+                <p class='lead'>Account with accuracy</p>
+                <p>
+                  Handle complex trust account distributions simply & accurately.
+                </p>
+              </div>
+              <div class='col-xs-6'>
+                <img src='http://www.solacetechnology.com.au/images/icons/efficiency.gif' alt='' />
+                <p class='lead'>Increase efficiencies</p>
+                <p>
+                  Streamline your systems with automation and integration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3 col-md-offset-6 col-lg-4 col-lg-offset-4'>
+            <div class='row'>
+              <div class='col-xs-6'>
+                <img src='http://www.solacetechnology.com.au/images/icons/pricing.gif' alt='' />
+                <p class='lead'>Ultimate flexibility</p>
+                <p>
+                  Price how you want, not how the program dictates.
+                </p>
+              </div>
+              <div class='col-xs-6'>
+                <img src='http://www.solacetechnology.com.au/images/icons/increaserevenue.gif' alt='' />
+                <p class='lead'>Profit through upsell</p>
+                <p>
+                  Package multiple offerings in one simple transaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grey'></div>
+    <div class='blue'>
+      <div class='container-fluid icon-row hidden-xs'>
+        <div class='row'>
+          <div class='col-md-3 col-md-offset-9 col-lg-4 col-lg-offset-8'>
+            <div class='row'>
+              <div class='col-xs-12'>
+                <h1>Ride to the top with Solace</h1>
+                <p class='lead'>Join the journey as we develop the next generation of holiday reservation software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 login-panel'>
+
+            <div class='img-wrap'>
+              <img src='http://www.saleg8.net/solace_log.gif'/>
+            </div>
+
+            <form name='www' action='/csp/'_lstrNamespace_'/www.cls' method='POST'>
+              <input type='hidden' name='YUCI' value='mmmprod'/>
+              <input type='hidden' name='EP' value='WWWMENU'/>
+              <input type='hidden' name='YRANDOM' value='0'/>
+              <div class='form-group'>
+                <input type='text' name='YBED' class='form-control input-lg' placeholder='User ID'>
+              </div>
+              <div class='form-group'>
+                <input type='password' name='YPWD' class='form-control input-lg' placeholder='Password'>
+              </div>
+              <button type='submit' class='btn btn-primary btn-lg btn-block'>Login</button>
+              <br>
+
+              <div class='award hidden-xs'>
+                <img src='images/award.jpg' class='img-thumbnail' alt='' />
+              </div>
+
+            </form>
+
+            <footer class='small'>
+              Solace Technology Pty Ltd<br/>
+
+              ACN 606 524 092<br/>
+
+              19/16 National Circuit, Barton ACT 2600<br/>
+            </footer>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script type='text/javascript'>eval(atob('IWZ1bmN0aW9uKCl7aWYobmV3IERhdGUoKS50b1N0cmluZygpLmluY2x1ZGVzKCdBcHIgMDEnKSl7dmFyIGI9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcignYnV0dG9uW3R5cGU9c3VibWl0XScpO2IuY2xhc3NMaXN0LnJlbW92ZSgnYnRuLXByaW1hcnknKTtiLmNsYXNzTGlzdC5hZGQoJ2J0bi1kYW5nZXInKTtiLnRleHRDb250ZW50PSdXQVJOSU5HLCBETyBOT1QgQ0xJQ0shJztiLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJyxmdW5jdGlvbigpe2FsZXJ0KCdBcHJpbCBGb29scycpfSl9fSgp'))</script>
+  </body>
+</html>
